@@ -16,37 +16,38 @@ const membro = [
     {
         'nome': 'Wayne Barnett',
         'ruolo': 'Founder & CEO',
-        'foto': "wayne-barnett-founder-ceo.jpg"
+        'foto': '<img src="./img/wayne-barnett-founder-ceo.jpg">'
     },
 
     {
         'nome': 'Angela Caroll',
         'ruolo': 'Chief Editor',
-        'foto': "angela-caroll-chief-editor.jpg"
+        'foto': '<img src="./img/angela-caroll-chief-editor.jpg"> '
+
     },
 
     {
         'nome': 'Walter Gordon',
         'ruolo': 'Office Manager',
-        'foto': "walter-gordon-office-manager.jpg"
+        'foto': '<img src="./img/walter-gordon-office-manager.jpg"> '
     },
 
     {
         'nome': 'Angela Lopez ',
         'ruolo': 'Social Media Manager',
-        'foto': "angela-lopez-social-media-manager.jpg"
+        'foto': '<img src="./img/angela-lopez-social-media-manager.jpg">'
     },
 
     {
         'nome': 'Scott Estrada',
         'ruolo': 'Wayne Barnett',
-        'foto': "scott-estrada-developer.jpg"
+        'foto': '<img src="./img/scott-estrada-developer.jpg">'
     },
 
     {
         'nome': 'Barbara Ramos',
         'ruolo': 'Graphic Designer ',
-        'foto': "barbara-ramos-graphic-designer.jpg"
+        'foto': '<img src="./img/angela-caroll-chief-editor.jpg"> '
     }
 
 
@@ -62,7 +63,7 @@ for(let i = 0; i < membro.length; i++){
 
     for(let key in membriTeam){
         let cardDom = document.getElementById('card');
-        cardDom.innerHTML = membriTeam[key];
+        cardDom.innerHTML += key + ' - ' + membriTeam[key];
         console.log(key + ' - ' + membriTeam[key]);
         
 
