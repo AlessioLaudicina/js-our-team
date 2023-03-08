@@ -40,14 +40,14 @@ const membro = [
 
     {
         'nome': 'Scott Estrada',
-        'ruolo': 'Wayne Barnett',
+        'ruolo': 'Developer',
         'foto': '<img src="./img/scott-estrada-developer.jpg">'
     },
 
     {
         'nome': 'Barbara Ramos',
         'ruolo': 'Graphic Designer ',
-        'foto': '<img src="./img/angela-caroll-chief-editor.jpg"> '
+        'foto': '<img src="./img/barbara-ramos-graphic-designer.jpg" alt=""> '
     }
 
 
@@ -63,7 +63,7 @@ for(let i = 0; i < membro.length; i++){
 
     for(let key in membriTeam){
         let cardDom = document.getElementById('card');
-        cardDom.innerHTML += key + ' - ' + membriTeam[key];
+        cardDom.innerHTML += key + ': ' + membriTeam[key] + '     ';
         console.log(key + ' - ' + membriTeam[key]);
         
 
