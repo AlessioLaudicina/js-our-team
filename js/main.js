@@ -11,7 +11,6 @@ Trasformare la stringa foto in una immagine effettiva
 BONUS 2:
 Organizzare i singoli membri in card/schede */
 
-
 const membro = [
     {
         'nome': 'Wayne Barnett',
@@ -53,3 +52,17 @@ const membro = [
 ]
 
 console.log(membro)
+
+
+for(let i = 0; i < membro.length; i++){
+    let membriTeam = membro[i];
+    console.log(membriTeam)
+
+    for(let key in membriTeam){
+        console.log(key + ' - ' + membriTeam[key])
+
+    }
+}
+
+const cardDom = document.getElementById('card')
+
