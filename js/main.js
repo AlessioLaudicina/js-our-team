@@ -56,13 +56,20 @@ console.log(membro)
 
 for(let i = 0; i < membro.length; i++){
     let membriTeam = membro[i];
-    console.log(membriTeam)
+    
+  
 
     for(let key in membriTeam){
-        console.log(key + ' - ' + membriTeam[key])
+        console.log(key + ' - ' + membriTeam[key]);
+        let cardDom = document.getElementById('card');
+        cardDom.innerHTML = membriTeam;
+        
+
+        
 
     }
+   
 }
 
-const cardDom = document.getElementById('card')
+
 
