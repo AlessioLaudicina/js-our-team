@@ -57,13 +57,13 @@ console.log(membro)
 
 
 for(let i = 0; i < membro.length; i++){
-    let membriTeam = membro[i];
+    const membriTeam = membro[i];
     
   
 
     for(let key in membriTeam){
         let cardDom = document.getElementById('card');
-        cardDom.innerHTML += key + ': ' + membriTeam[key] + '     ';
+        cardDom.innerHTML += membriTeam[key] + '     ';
         console.log(key + ' - ' + membriTeam[key]);
         
 
